@@ -22,3 +22,7 @@ Esta implementación está realizada sobre Symfony4, pero es facilmente aplicabl
 ### Uso
 
 ` php bin/console server:start`
+
+### Selfie
+
+<img src="http://i.imgur.com/4tXjUTg.png"/>
