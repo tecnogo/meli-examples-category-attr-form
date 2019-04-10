@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <div class="row">
+        {% include 'category_selection.html.twig' %}
+        <div class="col-md-9 col-sm-12">
+            {% if selected_category_data.error %}
+                {% include 'category_error.html.twig' %}
+            {% else %}
+                {% include 'category_form.html.twig' %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

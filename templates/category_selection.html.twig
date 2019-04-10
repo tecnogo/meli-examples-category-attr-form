@@ -1,0 +1,21 @@
+<div class="col-md-3 col-sm-12">
+    <div class="list-group text-center">
+        <a href="{{ url('home') }}"
+           class="list-group-item list-group-item-action list-group-item-dark">
+            Inicio
+        </a>
+        {% for category in categories %}
+            {% if selected_category_id == category.id %}
+                <a href="{{ url('category', {category: category.id}) }}"
+                   class="list-group-item list-group-item-action active">
+                    {{ category.name|e }}
+                </a>
+            {% else %}
+                <a href="{{ url('category', {category: category.id}) }}"
+                   class="list-group-item list-group-item-action">
+                    {{ category.name|e }}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

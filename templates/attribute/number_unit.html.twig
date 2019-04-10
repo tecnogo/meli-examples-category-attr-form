@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col">
+        <input
+                type="text"
+                class="form-control"
+                id="{{ attribute.name }}"
+                name="{{ attribute.name }}"
+        />
+    </div>
+    <div class="col">
+        <select
+                class="form-control"
+                id="{{ attribute.name }}_unit"
+                name="{{ attribute.name }}_unit"
+        >
+            {% for value in attribute.allowedUnits %}
+                <option value="{{ value.id }}">
+                    {{ value.name }}
+                </option>
+            {% endfor %}
+        </select>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+home:
+  path: /
+  controller: App\Controller\HomeController::index
+
+category:
+  path: /category/{category}
+  controller: App\Controller\HomeController::category
+

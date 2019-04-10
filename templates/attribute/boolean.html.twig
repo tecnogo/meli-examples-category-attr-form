@@ -1,0 +1,12 @@
+<select
+        class="form-control"
+        id="{{ attribute.name }}"
+        name="{{ attribute.name }}"
+>
+    <option selected>Selecciona una opción</option>
+    {% for value in attribute.values %}
+        <option value="{{ value.id }}">
+            {{ value.name }}
+        </option>
+    {% endfor %}
+</select>

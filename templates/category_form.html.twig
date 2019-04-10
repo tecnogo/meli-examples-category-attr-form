@@ -1,0 +1,16 @@
+<h3>{{ selected_category_data.name }}</h3>
+<hr/>
+
+<form>
+    {% for attribute in selected_category_data.attributes %}
+        <div class="form-group row">
+            <label for="{{ attribute.id }}" class="col-sm-12 col-md-3 col-lg-2 offset-lg-2 col-form-label">
+                {{ attribute.name }}
+                {% if attribute.required %} * {% endif %}
+            </label>
+            <div class="col-md-9 col-lg-5">
+                {% include 'attribute/' ~  attribute.type ~ '.html.twig' %}
+            </div>
+        </div>
+    {% endfor %}
+</form>
