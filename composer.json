@@ -60,5 +60,6 @@
     },
     "require-dev": {
         "symfony/web-server-bundle": "4.2.*"
-    }
+    },
+    "minimum-stability": "dev"
 }
