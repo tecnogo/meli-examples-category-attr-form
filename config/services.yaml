@@ -28,4 +28,5 @@ services:
     # please note that last definitions always *replace* previous ones
     Tecnogo\MeliSdk\Client:
         class: Tecnogo\MeliSdk\Client
+        factory: ['Tecnogo\MeliSdk\Client', create]
         autowire: true
