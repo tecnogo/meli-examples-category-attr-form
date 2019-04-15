@@ -5,7 +5,7 @@
 ## MeliSdk: Generación de formularios de atributos de categoría
 
 Implementación ejemplo de generación de formularios dinamicos de categorias de producto
-de Mercadolibre.
+de Mercadolibre utlizando [MeliSdk](https://github.com/tecnogo/meli-sdk).
 
 Esta implementación está realizada sobre Symfony4, pero es facilmente aplicable a otras soluciones.
 
@@ -17,11 +17,11 @@ Esta implementación está realizada sobre Symfony4, pero es facilmente aplicabl
 
 ### Instalación
 
-`composer require tecnogo/meli-sdk`
+> `composer update`
 
 ### Uso
 
-` php bin/console server:start`
+> ` php bin/console server:start`
 
 ### Selfie
 
